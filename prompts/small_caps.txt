@@ -1,0 +1,3 @@
+filter: small_caps
+---
+Find small-cap projects that are interesting to investors. Look out for high mind share, high social engagement, and follower growth at a good price.

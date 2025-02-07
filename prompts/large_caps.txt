@@ -1,0 +1,3 @@
+filter: large_caps
+---
+Find large-cap projects that are interesting to investors. Look out for high mind share, high social engagement, and stable growth.

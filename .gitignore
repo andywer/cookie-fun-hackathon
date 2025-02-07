@@ -1,0 +1,11 @@
+__pycache__
+.DS_Store
+.logs
+.pytest_cache
+Thumbs.db
+.env
+*.cookies.json
+*.log
+*.session
+*.session-journal
+*.sqlite

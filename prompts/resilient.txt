@@ -1,0 +1,3 @@
+filter: resilient
+---
+Find projects that were resilient during recent market fluctuations. Look out for projects that have a strong business model, a clear revenue stream, and stable fundamentals.
