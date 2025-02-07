@@ -1,6 +1,6 @@
 # Cookie.Fun + Twitter Analysis Tool
 
-A CLI tool built for the February 2025 cookie.fun hackathon. This project ingests data on web3 AI agents from [cookie.fun](https://cookie.fun) and social media data from Twitter (X) and then runs advanced reasoning models to generate insightful analyses based on user-supplied prompts.
+A CLI tool built for the February 2025 cookie.fun hackathon. This tool ingests data on web3 AI agents from [cookie.fun](https://cookie.fun) using its DataSwarm API and tweets from Twitter (X), then runs advanced reasoning models to generate market analyses based on user-supplied prompts.
 
 Its main feature is being able to efficiently process much more source data than the reasoning model would normally be able to handle. In order to achieve that, the vast set of input data is chunked into smaller batches, processed, and then recursively recombined and reprocessed until we are left with one final result.
 
