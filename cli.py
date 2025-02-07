@@ -44,7 +44,7 @@ async def ingest_cookie_fun(delta_interval: Literal["_3Days", "_7Days"]):
         click.echo(f"- Name: {agent.agentName}")
         click.echo(f"  Price: ${agent.price:,.4f}")
         click.echo(f"  Market Cap: ${agent.marketCap:,.0f}")
-        click.echo(f"  Twitter: @{agent.twitterUsernames[0]}")
+        click.echo(f"  Twitter: @{agent.twitterUsernames[0] if agent.twitterUsernames else 'N/A'}")
 
 
 @cli.command("ingest:twitter")
