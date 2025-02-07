@@ -95,7 +95,7 @@ The tool is run via the command line with multiple subcommands. Here are some ex
 
 Ingest data from the cookie.fun API:
 ```bash
-$ python cli.py ingest:cookie.fun --delta-interval _3Days
+$ python . ingest:cookie.fun --delta-interval _3Days
 ```
 This command will output a list of agents with details like name, price, market cap, and associated Twitter handles.
 
@@ -103,7 +103,7 @@ This command will output a list of agents with details like name, price, market 
 
 Ingest tweets from a specific Twitter user:
 ```bash
-$ python cli.py ingest:twitter your_username --count 50 --replies
+$ python . ingest:twitter your_username --count 50 --replies
 ```
 This command retrieves tweets (and optionally replies) for the specified username.
 
@@ -111,7 +111,7 @@ This command retrieves tweets (and optionally replies) for the specified usernam
 
 Run an analysis on ingested cookie.fun data using a prompt:
 ```bash
-$ python cli.py analyze ./prompts/large_caps.txt --run-id 17
+$ python . analyze ./prompts/large_caps.txt --run-id 17
 ```
 This command loads the prompt file, selects an ingestion run (either by ID or the latest), and processes the analysis pipeline. The output is a markdown report summarizing the data insights.
 
@@ -119,7 +119,7 @@ This command loads the prompt file, selects an ingestion run (either by ID or th
 
 Summarize tweets for one or more Twitter users:
 ```bash
-$ python cli.py summarize:tweets user1 user2 --focus-ai
+$ python . summarize:tweets user1 user2 --focus-ai
 ```
 The tool fetches tweets for the provided usernames and generates a detailed summary that can optionally focus on AI-related trends.
 
@@ -127,7 +127,7 @@ The tool fetches tweets for the provided usernames and generates a detailed summ
 
 Analyze recent tweets for a specific agent:
 ```bash
-$ python cli.py analyze:agent_tweets your_username --context ./path/to/context.txt --count 20
+$ python . analyze:agent_tweets your_username --context ./path/to/context.txt --count 20
 ```
 This command evaluates the quality and consistency of an agent’s tweets and produces an in-depth markdown analysis.
 
